@@ -32,6 +32,7 @@ $(document).ready(function (e) {
             contentType: false,
                 cache: false,
             processData:false,
+            // you may also add a loading gif example html('<div>Image busy Uploading....</div><img src="balls.gif" />');
             beforeSend: function() {
                             $("#preview").html('Uploading image........');
                         },
