@@ -32,10 +32,13 @@ $(document).ready(function (e) {
             contentType: false,
                 cache: false,
             processData:false,
+            beforeSend: function() {
+                            $("#preview").html('Uploading image........');
+                        },
             success: function(data) {
-                // view uploaded file.
-                $("#preview").html(data);
-            }
+                         // view uploaded file.
+                         $("#preview").html(data);
+                     }
         });
     }));
 });
